@@ -2,7 +2,7 @@
 A tuple that lets you access members by name, too.
 
 # Example:
-```
+```C++
 #include <iostream>
 #include <named_tuple.h>
 
@@ -36,7 +36,7 @@ This is a showcase. Macros are horrible, even simple ones like `NAMED_TUPLE_MEMB
 # Requirements:
 Tested with clang-6.0 (current trunk). To build the example, I do
 
-```
+```bash
 mkdir build
 cd build
 cmake .. -DCMAKE_CXX_COMPILER=/usr/local/clang-trunk/bin/clang++ \
