@@ -5,8 +5,8 @@
 
 #define NAMED_TUPLE_MEMBER(name, expr)                 \
   std::make_pair(                                      \
-      [](const auto& base, const auto& index) {        \
-        using base_t = std::decay_t<decltype(base)>;   \
+      [](auto base, const auto& index) {               \
+        using base_t = decltype(base);                 \
         using index_t = std::decay_t<decltype(index)>; \
         struct accessor : public base_t                \
         {                                              \
