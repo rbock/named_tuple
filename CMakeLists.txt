@@ -25,6 +25,9 @@
 cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
 project(named_tuple VERSION 0.1 LANGUAGES CXX)
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 enable_testing()
 
 add_library(named_tuple INTERFACE)
@@ -33,6 +36,8 @@ target_include_directories(named_tuple INTERFACE
   $<BUILD_INTERFACE:${named_tuple_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
   )
+
+target_sources(named_tuple INTERFACE ${named_tuple_SOURCE_DIR}/include/named_tuple.h)
 
 install(DIRECTORY "${PROJECT_SOURCE_DIR}/include/named_tuple"
         DESTINATION include

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <named_tuple.h>
 
 int main()
