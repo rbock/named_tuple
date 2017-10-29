@@ -34,13 +34,7 @@ Lovely, right? Let me know if you like it, and let me know if you see ways to im
 This is a showcase. Macros are horrible, even simple ones like `NAMED_TUPLE_MEMBER`. I want to be able to do this with reflection and constexpr blocks for real some nice day.
 
 # Requirements:
-Tested with clang-6.0 (current trunk) and gcc-6.3. To build the example, I do
-
-```bash
-mkdir build
-cd build
-cmake .. -DCMAKE_CXX_COMPILER=/usr/local/clang-trunk/bin/clang++ \
-         -DCMAKE_CXX_FLAGS='-std=c++14 -stdlib=libc++'
-```
+ - CMake-3.2 or later
+ - A C++14 compliant compiler. Tested with clang-6.0 (current trunk) and gcc-6.3 and MSVC-2017.
 
 
